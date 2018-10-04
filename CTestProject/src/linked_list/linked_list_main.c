@@ -19,6 +19,8 @@ void linked_list_main(void)
 		printf("4. Add Node at the end of the list \n");
 		printf("5. Add Node at the given position of the list \n");
 		printf("6. Delete the node at begin of the list \n");
+		printf("7. Delete the node at end of the list \n");
+		printf("8. Delete Node at the given position of the list \n");
 		printf("Enter the choice \n");
 		scanf("%d",&ch);
 		switch(ch)
@@ -71,6 +73,18 @@ void linked_list_main(void)
 			else
 			{
 				deletenodeatend(head);
+			}
+			break;
+		case 8:
+			if(head == NULL)
+			{
+				printf("List is Empty\n");
+			}
+			else
+			{
+				printf("Enter the position \n");
+				scanf("%d",&position);
+				deletenodeatposition(head,position);
 			}
 			break;
 		default:
