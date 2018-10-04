@@ -27,7 +27,14 @@ void linked_list_main(void)
 			head = create_list(head);
 			break;
 		case 2:
-			print(head);
+			if(head == NULL)
+			{
+				printf("List is Empty\n");
+			}
+			else
+			{
+				print(head);
+			}
 			break;
 		case 3:
 			printf("Enter the data \n");
@@ -47,7 +54,14 @@ void linked_list_main(void)
 			addnodeatposition(head, position,data);
 			break;
 		case 6:
-			head = deletenodeatbegin(head);
+			if(head == NULL)
+			{
+				printf("List is Empty\n");
+			}
+			else
+			{
+				head = deletenodeatbegin(head);
+			}
 			break;
 		default:
 			printf("Wrong choice \n");
