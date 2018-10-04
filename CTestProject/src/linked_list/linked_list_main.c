@@ -63,6 +63,16 @@ void linked_list_main(void)
 				head = deletenodeatbegin(head);
 			}
 			break;
+		case 7:
+			if(head == NULL)
+			{
+				printf("List is Empty\n");
+			}
+			else
+			{
+				deletenodeatend(head);
+			}
+			break;
 		default:
 			printf("Wrong choice \n");
 			break;

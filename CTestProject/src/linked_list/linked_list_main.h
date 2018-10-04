@@ -20,3 +20,4 @@ struct node *addnodeatbegin(struct node *start, int data);
 void addnodeatend(struct node *start, int data);
 void addnodeatposition(struct node *start, int pos, int data);
 struct node *deletenodeatbegin(struct node *start);
+void deletenodeatend(struct node *start);
