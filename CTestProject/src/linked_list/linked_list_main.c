@@ -18,6 +18,7 @@ void linked_list_main(void)
 		printf("3. Add Node at the begin of the list \n");
 		printf("4. Add Node at the end of the list \n");
 		printf("5. Add Node at the given position of the list \n");
+		printf("6. Delete the node at begin of the list \n");
 		printf("Enter the choice \n");
 		scanf("%d",&ch);
 		switch(ch)
@@ -44,6 +45,9 @@ void linked_list_main(void)
 			printf("Enter the data \n");
 			scanf("%d",&data);
 			addnodeatposition(head, position,data);
+			break;
+		case 6:
+			head = deletenodeatbegin(head);
 			break;
 		default:
 			printf("Wrong choice \n");
